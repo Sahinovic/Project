@@ -4,6 +4,7 @@ from recipe import views
 
 router = DefaultRouter()
 router.register('tags', views.TagViewSets)
+router.register('ingerdients',views.IngredientViewSet)
 
 app_name = 'recipe'
 

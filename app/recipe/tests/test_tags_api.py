@@ -23,7 +23,7 @@ class PublicTagsApiTest(TestCase):
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
 class PrivatTagAPiTests(TestCase):
-    """test the authorized zser tags api"""
+    """test the authorized user tags api"""
     def setUp(self):
         self.user=get_user_model().objects.create_user(
             'test@gmail.com',
